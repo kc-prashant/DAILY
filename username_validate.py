@@ -9,15 +9,18 @@ This script validates a username based on the following requirements:
 username = input("Enter your username: ")
 
 
-if  username[0].isalpha():
+if not username[0].isalpha():
+    print("Username should start with alphabet!!!")
 
-    if len(username) >=5 and len(username) <= 15:
-         
-    elif username ==( " "):
-         print("spaces are not allowed")
+elif len(username) < 5 or len(username) > 15:
+    print("Username should be of length 5-15!!!")
 
-    else:
-         print("Username should be within 5-15 characters!")
-    
+elif " " in username:
+    print("Username mustnot contains spaces!!!")
+
+elif not username.isalnum():
+    print("username must be alphabetic or alphanumeric other special characters are not allowed!!!!")
+
 else:
-     print("username should start with alphabet")
+    print(f"{username} is valid!")
+         
