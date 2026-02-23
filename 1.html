@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+<input id="a">
+<input id="b">
+<button onclick="calc('+')">+</button>
+<button onclick="calc('-')">-</button>
+<button onclick="calc('*')">*</button>
+<button onclick="calc('/')">/</button>
+<h3 id="r"></h3>
+<script>
+function calc(o){
+let a=parseFloat(document.getElementById("a").value);
+let b=parseFloat(document.getElementById("b").value);
+let r;
+if(o==="+")r=a+b;
+if(o==="-")r=a-b;
+if(o==="*")r=a*b;
+if(o==="/")r=a/b;
+document.getElementById("r").innerText=r;
+}
+</script>
+</body>
+</html>
