@@ -1,1 +1,2 @@
-this is new line written in the file removing old one
+this is new line written in the file removing old one this is line added to the previous file 
+ this is another file
