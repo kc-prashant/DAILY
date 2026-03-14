@@ -1,2 +1,1 @@
-hello this is test file 
-this is used to read and write
+this is new line written in the file removing old one
