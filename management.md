@@ -1,0 +1,1 @@
+ process of effectivelly achieving organizational objectives by effective utillization use of scare resources in a changing environment.
