@@ -28,7 +28,7 @@ elif player_move == "r":
 
 
 #Computer choses
-random_number == random.randint(1,3)
+comp_number == random.randint(1,3)
 if comp_number ==1:
     computer_move = "s"
     print("Scissors")
@@ -40,7 +40,7 @@ elif comp_number ==3:
     print(rock)
 
 # Display  and record 
-if player_move == comp_move:
+if player_move == computer_move:
     print ("its a tie ")
     ties = ties +1
 elif player_move == 'r' and computer_move == 's':
