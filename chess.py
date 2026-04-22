@@ -58,3 +58,15 @@ def print_chessboard(board):
         is_white_square = not is_white_square
 
     print(BOARD_TEMPLATE.format(*squares))
+
+    if x + y in board.keys():
+                squares.append(board[x + y])
+            else:
+                if is_white_square:
+                    squares.append(WHITE_SQUARE)
+                else:
+                    squares.append(BLACK_SQUARE)
+            is_white_square = not is_white_square
+        is_white_square = not is_white_square
+
+    print(BOARD_TEMPLATE.format(*squares))
